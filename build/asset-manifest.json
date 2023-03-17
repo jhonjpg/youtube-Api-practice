@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.be8f82af.css",
-    "main.js": "/static/js/main.1a9ce99f.js",
-    "static/js/787.a3118e53.chunk.js": "/static/js/787.a3118e53.chunk.js",
-    "static/media/youtubebg.jpg": "/static/media/youtubebg.425bbb2a2d80094f5f9f.jpg",
-    "index.html": "/index.html",
-    "main.be8f82af.css.map": "/static/css/main.be8f82af.css.map",
-    "main.1a9ce99f.js.map": "/static/js/main.1a9ce99f.js.map",
-    "787.a3118e53.chunk.js.map": "/static/js/787.a3118e53.chunk.js.map"
+    "main.css": "/youtube-Api-practice/build/static/css/main.816564db.css",
+    "main.js": "/youtube-Api-practice/build/static/js/main.cfdd70a1.js",
+    "static/js/787.a3118e53.chunk.js": "/youtube-Api-practice/build/static/js/787.a3118e53.chunk.js",
+    "static/media/youtubebg.jpg": "/youtube-Api-practice/build/static/media/youtubebg.425bbb2a2d80094f5f9f.jpg",
+    "index.html": "/youtube-Api-practice/build/index.html",
+    "main.816564db.css.map": "/youtube-Api-practice/build/static/css/main.816564db.css.map",
+    "main.cfdd70a1.js.map": "/youtube-Api-practice/build/static/js/main.cfdd70a1.js.map",
+    "787.a3118e53.chunk.js.map": "/youtube-Api-practice/build/static/js/787.a3118e53.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.be8f82af.css",
-    "static/js/main.1a9ce99f.js"
+    "static/css/main.816564db.css",
+    "static/js/main.cfdd70a1.js"
   ]
 }
