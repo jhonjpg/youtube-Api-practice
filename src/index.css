@@ -1,13 +1,540 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+    padding: 0px;
+    margin: 0px;
+    text-decoration: none !important;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+    background-color: #0f0f0f;
+}
+
+
+/* .App {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+header {
+    position: fixed;
+    top: 0;
+    width: 98.1%;
+    height: 60px;
+    padding: 5px;
+    background-color: #0f0f0f;
+    z-index: 30;
+}
+
+aside {
+    position: fixed;
+    top: 0;
+    width: 80.1%;
+    height: 63px;
+    padding: 5px;
+    background-color: #0f0f0f;
+    z-index: 30;
+}
+
+#menuNav {
+    width: 100%;
+    background-color: #0f0f0f;
+}
+
+#bottonToggle {
+    width: 5% !important;
+    height: 3.7%;
+    position: relative;
+    top: 14px;
+    left: 30px;
+    background-color: transparent;
+}
+
+#navegacion {
+    width: 22%;
+}
+
+.logo {
+    position: relative;
+    top: -2px;
+    width: 30%;
+    background-repeat: no-repeat;
+    background-position: 100%;
+    background-size: contain;
+    height: 60px;
+    background-image: url("../public/youtubebg.jpg");
+    cursor: pointer;
+}
+
+nav svg {
+    width: 25px;
+    color: white;
+}
+
+nav svg:hover {
+    background-color: gray;
+    border-radius: 30px;
+}
+
+
+/* buscador */
+
+.search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 54%;
+    height: 200px;
+    padding: 2px;
+}
+
+.search input {
+    width: 80%;
+    padding: 0px;
+    outline: none;
+    height: 45px;
+    border-radius: 80px 0px 0px 80px;
+    border-right: none;
+    background-color: #121212;
+    padding-left: 15px;
+    border: 2px solid #232323;
+    color: white;
+}
+
+.search input:focus {
+    border: 2px solid #065fd4;
+}
+
+ul {
+    position: absolute;
+    border-radius: 10px;
+    top: 55px;
+    left: 408px;
+    width: 520px;
+    background-color: white;
+}
+
+li {
+    text-decoration: none;
+    list-style: none;
+}
+
+.x {
+    text-align: center;
+    position: relative;
+    right: 106px;
+    top: 6px;
+    border-radius: 80px;
+    font-size: 20px;
+    width: 30px;
+    height: 42px;
+    color: white;
+}
+
+.x:hover {
+    background-color: gray;
+}
+
+.lupa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 9%;
+    height: 47px;
+    text-align: center;
+    border-radius: 0px 80px 80px 0px;
+    background-color: #232323;
+}
+
+#lupa {
+    text-align: center;
+    width: 20px;
+    color: white;
+}
+
+.microphone {
+    border-radius: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #222;
+    height: 40px;
+    width: 50px;
+}
+
+.microphone svg {
+    width: 20px;
+    color: white;
+}
+
+.microphone:hover {
+    background-color: gray;
+}
+
+
+/* resto */
+
+.cvnp {
+    display: flex;
+    width: 16%;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    justify-self: end;
+}
+
+.createVideo {
+    border-radius: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #222;
+    height: 40px;
+    width: 50px;
+}
+
+.createVideo svg {
+    width: 20px;
+    color: white;
+}
+
+.createVideo:hover {
+    background-color: gray;
+}
+
+.campana {
+    border-radius: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #222;
+    height: 40px;
+    width: 50px;
+}
+
+.campana svg {
+    width: 20px;
+    color: white;
+}
+
+.campana:hover {
+    background-color: gray;
+}
+
+.profile {
+    border-radius: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #222;
+    height: 40px;
+    width: 50px;
+}
+
+.profile svg {
+    width: 20px;
+    color: white;
+}
+
+.profile:hover {
+    background-color: gray;
+}
+
+
+/* segundo nav */
+
+.navegacionHome {
+    position: fixed;
+    left: 0;
+    background-color: #0f0f0f;
+    top: 85px;
+    width: 6%;
+    height: 100vh;
+    padding: 2px;
+    cursor: pointer;
+}
+
+.home {
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 60px;
+    width: 70px;
+    cursor: pointer;
+}
+
+.home svg {
+    width: 100%;
+    height: 22px;
+    color: white;
+}
+
+.home:hover {
+    background-color: gray;
+    opacity: 0.9;
+}
+
+.short {
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 60px;
+    width: 70px;
+    cursor: pointer;
+}
+
+.short svg {
+    width: 100%;
+    height: 22px;
+    color: white;
+}
+
+.short:hover {
+    background-color: gray;
+    opacity: 0.9;
+}
+
+.suscription {
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 60px;
+    width: 70px;
+    cursor: pointer;
+}
+
+.suscription svg {
+    width: 100%;
+    height: 22px;
+    color: white;
+}
+
+.suscription:hover {
+    background-color: gray;
+    opacity: 0.9;
+}
+
+.biblioteca {
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 60px;
+    width: 70px;
+    cursor: pointer;
+    padding: 1px;
+}
+
+.biblioteca svg {
+    width: 100%;
+    height: 22px;
+    color: white;
+}
+
+.biblioteca:hover {
+    background-color: gray;
+    opacity: 0.9;
+}
+
+h5 {
+    width: 100%;
+    font-size: 10px;
+    margin-top: 7px;
+    color: white;
+    text-align: center;
+}
+
+
+/* videos */
+
+iframe {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover;
+    border-radius: 17px;
+    transition: 1s;
+}
+
+.videosContainer:hover {
+    transform: scale(1.2);
+    border-radius: 17px;
+    transition-delay: 3s;
+}
+
+#DivCarousel {
+    position: fixed;
+    display: flex;
+    top: 64px;
+    left: 90px;
+    width: 90.7%;
+    height: 70px;
+    z-index: 50;
+}
+
+
+/* li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    font-size: 20px;
+} */
+
+
+/* scroll */
+
+.scroll {
+    position: fixed;
+    right: 0;
+    height: 100vh;
+    background-color: #0f0f0f;
+    width: 2%;
+    overflow-y: scroll;
+    overflow-y: visible;
+}
+
+section {
+    position: relative;
+    top: 60px;
+    left: 86px;
+    width: 91.1%;
+    z-index: 4;
+    padding: 5px;
+}
+
+.DivVideos {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-color: #0f0f0f;
+    padding: 5px;
+}
+
+.videosContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5px;
+    width: 24%;
+    gap: 4px;
+    transition: 1s;
+}
+
+.video {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 70%;
+    border-radius: 17px;
+    background-color: #222;
+}
+
+
+/* .videoPlay {
+    border-radius: 17px;
+}
+
+.videoPlay iframe {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+} */
+
+
+/* 
+.videoPlay iframe {
+    transform: scale(2);
+} */
+
+.channelStuff {
+    display: flex;
+    width: 100%;
+    height: 100px;
+    padding: 1px;
+}
+
+.canalLogo {
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    width: 20%;
+    height: 100%;
+}
+
+span {
+    margin-top: 10px;
+    background-color: #222;
+    border-radius: 90px;
+    width: 80%;
+    height: 50%;
+}
+
+.namesArea {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 100%;
+    margin-top: 10px;
+    padding-bottom: 3px;
+}
+
+h2 {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-size: 0.9em;
+    width: 100%;
+    margin: 0px;
+    color: white;
+    overflow: hidden;
+}
+
+.canalName {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 50%;
+    color: #aaaaaa;
+}
+
+.DivVisualizaciones {
+    display: flex;
+    width: 100%;
+    height: 30%;
+}
+
+.visializaciones {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-grow: 2;
+    width: 60%;
+    height: 100%;
+    font-size: 14px;
+    color: #aaaaaa;
+}
+
+strong {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2%;
+    margin: 0px;
+    color: #aaaaaa;
+}
+
+.dias {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 38%;
+    color: #aaaaaa;
 }

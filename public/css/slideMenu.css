@@ -1,0 +1,94 @@
+.seconNav {
+    width: 100%;
+    height: auto;
+    background-color: #222;
+}
+
+.homeFromMenu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0f0f0f;
+    width: 45px;
+    padding: 10px;
+}
+
+.homeFromMenu svg {
+    width: 20px;
+    height: 30px;
+    color: white;
+}
+
+.homeFromMenu:hover {
+    background-color: #838383;
+    border-radius: 40px;
+}
+
+.shortFromMenu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0f0f0f;
+    width: 45px;
+    padding: 10px;
+}
+
+.shortFromMenu svg {
+    width: 20px;
+    height: 30px;
+    color: white;
+}
+
+.shortFromMenu:hover {
+    background-color: #838383;
+    border-radius: 40px;
+}
+
+.suscriptionFromMenu:hover {
+    background-color: #838383;
+    border-radius: 40px;
+}
+
+.suscriptionFromMenu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0f0f0f;
+    width: 45px;
+    padding: 10px;
+}
+
+.suscriptionFromMenu svg {
+    width: 20px;
+    height: 30px;
+    color: white;
+}
+
+.suscriptionFromMenu:hover {
+    background-color: #838383;
+    border-radius: 40px;
+}
+
+.slideMenuOn {
+    position: fixed;
+    z-index: 100;
+    width: 30%;
+    height: 100vh;
+}
+
+.slideMenuOff {
+    position: fixed;
+    top: 10px;
+    z-index: 100;
+    width: 5%;
+    height: 40px;
+}
+
+#offcanvasExample {
+    width: 20%;
+    padding: 8px;
+}
+
+#offcanvasExample {
+    background-color: #0f0f0f !important;
+}
